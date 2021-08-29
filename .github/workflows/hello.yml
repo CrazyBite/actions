@@ -7,19 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       name: Show date
-      run: date
+      - run: date
   job2:
     runs-on: windows-latest
     steps:
       name: Show date
-      run: date
+      - run: date
   job3:
     runs-on: macos-latest
     steps:
       name: Show date
-      run: date
+      - run: date
   job4:
     needs: [job1, job2, job3]
     steps:
       name: Show date
-      run: date
+      - run: date
